@@ -1,0 +1,78 @@
+<app-head [img1]="'assets/img/head1.png'" [img2]="'assets/img/head11.png'">
+  <h1 class="mainTitle" mainTitle>Початкова школа «Поділля» м. Києва</h1>
+  <p class="mainp" mainp>
+    Навчаємо за актуальними методиками та пробуджуємо справжню жагу до отримання
+    нових знань
+  </p>
+  <div class="links" mainLinks>
+    <a routerLink="elementary" class="btn-blue pd-small">Початкова школа</a>
+    <a routerLink="preschool" class="btn-hollow pd-small"
+      >Дошкільний підрозділ</a
+    >
+  </div>
+</app-head>
+<app-section [reversed]="true" [image]="'/assets/img/about.png'" id="about">
+  <h2 class="title" title>Про «Поділля»</h2>
+  <p class="parag" parag>
+    Навчальний заклад «Поділля» розташований у самому серці історичного Подолу.
+    З 2021 року має статус початкової школи з дошкільними групами виховання.
+    Наша мета—покращення початкової освіти через сучасні методики викладання та
+    індивідуальний підхід.
+  </p>
+</app-section>
+<section class="quotes" id="principles">
+  <div class="container">
+    <h2 class="title">Наші принципи викладання</h2>
+
+    <div class="content">
+      <div class="quote">
+        <img src="/assets/img/individ.png" alt="" />
+        <h3>Індивідуальність</h3>
+        <p>
+          Кожна дитина—особистість. Використовуючи особливий підхід розкриваємо
+          прагнення до навчання
+        </p>
+      </div>
+      <div class="quote">
+        <img src="/assets/img/discip.png" alt="" />
+        <h3>Дисципліна</h3>
+        <p>
+          Заохочуємо до сумлінної праці, що необхідна для досягнення успіхів у
+          навчанні, а також у сучасному світі.
+        </p>
+      </div>
+      <div class="quote">
+        <img src="/assets/img/povaga.png" alt="" />
+        <h3>Повага</h3>
+        <p>
+          Одна з наших цілей—створення комфотного та толерантного середовища для
+          дитини та оточення
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-section [image]="'/assets/img/elementary.png'" id="elementary">
+  <h2 class="title" title>Початкова школа</h2>
+  <p class="parag" parag>
+    Метою початкової освіти є всебічний розвиток дитини, її талантів,
+    здібностей, компетентностей та наскрізних умінь відповідно до вікових та
+    індивідуальних особливостей.
+  </p>
+  <a href="#" class="btn-blue pd-large" btn>Детальніше</a>
+</app-section>
+<app-section
+  [reversed]="true"
+  [image]="'/assets/img/preschool.png'"
+  id="preschool"
+>
+  <h2 class="title" title>Дошкільний підрозділ</h2>
+  <p class="parag" parag>
+    Дошкільний підрозділ охоплює навчання та виховання дітей віком від 2-х до 6
+    років. Дошкільні групи займаються за програмою «Дитина». Особлива увага
+    приділяється формуванню освітніх навичок дітей 5-ти років як аспекту
+    підготовки до школи
+  </p>
+  <a href="#" class="btn-blue pd-large" btn>Детальніше</a>
+</app-section>

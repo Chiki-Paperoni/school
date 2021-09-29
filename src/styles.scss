@@ -1,1 +1,145 @@
-/* You can add global styles to this file, and also import other style files */
+@import "style.fonts.scss";
+@import "style.null.scss";
+a {
+  display: inline-block;
+}
+button {
+  cursor: pointer;
+}
+html {
+  font-family: "Nunito";
+  font-weight: normal;
+  font-style: normal;
+  scroll-behavior: smooth;
+  font-size: 1vw;
+}
+body {
+  overflow-x: auto;
+}
+.btn-blue {
+  color: #fff;
+  font-weight: bold;
+  font-size: clamp(12px, 1.25rem, 18px);
+  line-height: 135%;
+  background: #3e44e6;
+  border-radius: 36px;
+  text-align: center;
+  min-width: 145px;
+}
+.pd-large {
+  padding: max(12px, 1.2rem) max(22px, 4rem);
+}
+.pd-small {
+  padding: max(9.5px, 1.2rem) max(15px, 2.5rem);
+}
+.btn-hollow {
+  font-weight: bold;
+  font-size: clamp(12px, 1.25rem, 18px);
+  line-height: 135%;
+  border-radius: 36px;
+  border: 2.5px solid #3e44e6;
+  color: #3e44e5;
+  background-color: white;
+  text-align: center;
+  min-width: 145px;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(26px, 5rem, 80px);
+  width: 100%;
+}
+#main {
+  max-width: 638px;
+
+  width: 60%;
+  min-width: 325px;
+  margin-top: 20%;
+  position: relative;
+  z-index: 2;
+  h1 {
+    font-weight: bold;
+    font-size: clamp(30px, 4.1rem, 60px);
+    line-height: 105%;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: clamp(14px, 1.25rem, 18px);
+    line-height: 115.5%;
+    margin-bottom: 40px;
+    color: #2b2b2b;
+    max-width: 420px;
+  }
+  .links {
+    a:first-of-type {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+section {
+  .title {
+    font-weight: bold;
+    font-size: clamp(24px, 3.5rem, 50px);
+    line-height: 117%;
+    color: #2b2b2b;
+  }
+}
+#principles {
+  background: #f4f2f2;
+  padding: 100px 0;
+  margin: 130px 0;
+}
+.quotes {
+  .title {
+    margin-bottom: 100px;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 80px;
+    column-gap: 20px;
+    color: #1f1f1f;
+
+    .quote {
+      max-width: 310px;
+      h3 {
+        margin: 30px 0;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 105%;
+      }
+      p {
+        font-size: 18px;
+        line-height: 139.5%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  //2.5rem = 36px
+  html {
+    font-size: 14.4px;
+  }
+}
+@media screen and (max-width: 824px) {
+  #main {
+    margin-top: 35%;
+  }
+}
+@media screen and (max-width: 716px) {
+  .nowrapQuotes {
+    .content {
+      flex-wrap: nowrap;
+      overflow: auto;
+      column-gap: 50px;
+      .quote {
+        min-width: 310px;
+      }
+    }
+  }
+}

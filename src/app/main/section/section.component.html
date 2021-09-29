@@ -1,0 +1,10 @@
+<div class="container">
+  <section [style]="reversed ? 'flex-direction:row-reverse' : ''">
+    <div class="text">
+      <ng-content select="[title]"></ng-content>
+      <ng-content select="[parag]"></ng-content>
+      <ng-content select="[btn]"></ng-content>
+    </div>
+    <img loading="lazy" class="image" [src]="image" alt="" />
+  </section>
+</div>

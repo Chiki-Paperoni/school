@@ -38,7 +38,7 @@ body {
   line-height: 135%;
   border-radius: 36px;
   border: 2.5px solid #3e44e6;
-  color: #3e44e5;
+  color: #3e44e5 !important;
   background-color: white;
   text-align: center;
   min-width: 145px;
@@ -53,7 +53,7 @@ body {
   max-width: 638px;
 
   width: 60%;
-  min-width: 325px;
+  min-width: 320px;
   margin-top: 20%;
   position: relative;
   z-index: 2;
@@ -73,7 +73,7 @@ body {
   }
   .links {
     a:first-of-type {
-      margin-right: 20px;
+      margin-right: max(6px, 1.4rem);
       margin-bottom: 20px;
     }
   }
@@ -89,12 +89,13 @@ section {
 }
 #principles {
   background: #f4f2f2;
-  padding: 100px 0;
-  margin: 130px 0;
+  padding: max(60px, 7rem) 0;
+  margin: max(80px, 9rem) 0;
 }
 .quotes {
   .title {
-    margin-bottom: 100px;
+    margin-bottom: max(40px, 7rem);
+    min-width: 329px;
   }
   .content {
     display: flex;
@@ -109,12 +110,49 @@ section {
       h3 {
         margin: 30px 0;
         font-weight: bold;
-        font-size: 34px;
+        font-size: clamp(20px, 2.4rem, 34px);
         line-height: 105%;
       }
       p {
-        font-size: 18px;
+        font-size: clamp(14px, 1.25rem, 18px);
         line-height: 139.5%;
+      }
+    }
+  }
+}
+#crew {
+  .crew {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, max(151px, 20.8rem));
+    column-gap: 20px;
+    row-gap: max(40px, 4.2rem);
+    margin-top: max(40px, 4.2rem);
+    margin-bottom: max(80px, 9.7rem);
+    justify-content: center;
+    .card {
+      img {
+        max-width: 100%;
+      }
+      .category {
+        color: #3e44e5;
+        font-weight: bold;
+        font-size: max(12px, 1rem);
+        margin-top: max(12px, 1.45rem);
+        line-height: 105%;
+        text-transform: uppercase;
+      }
+      .name {
+        font-weight: bold;
+        font-size: max(12px, 1.25rem);
+        margin-top: max(12px, 1rem);
+        line-height: 105%;
+        color: #1f1f1f;
+      }
+      .role {
+        font-size: max(12px, 1.25rem);
+        line-height: 139.5%;
+        color: #1f1f1f;
+        margin-top: 6px;
       }
     }
   }

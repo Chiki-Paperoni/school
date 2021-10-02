@@ -1,7 +1,7 @@
 #location {
   .location {
-    margin-bottom: 100px;
-    margin-top: 60px;
+    margin-bottom: max(60px, 7rem);
+    margin-top: max(20px, 4.5rem);
     display: flex;
     justify-content: center;
     column-gap: 40px;
@@ -63,6 +63,7 @@ footer {
 
         .col:first-of-type {
           margin-right: 40px;
+          min-width: 132px;
         }
         span:first-of-type {
           margin-top: 0;

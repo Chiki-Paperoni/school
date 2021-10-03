@@ -1,0 +1,33 @@
+<section id="carousel">
+  <div class="container">
+    <h2 class="title">Галерея</h2>
+    <div class="carousel">
+      <ul>
+        <li #list>
+          <ng-container *ngFor="let img of images; index as i">
+            <img src="/assets/img/{{ img }}" alt="" />
+          </ng-container>
+        </li>
+      </ul>
+      <span class="nav prev" (click)="prev()"
+        ><img src="/assets/img/prev.png" alt=""
+      /></span>
+      <span class="nav next" (click)="next()"
+        ><img src="/assets/img/next.png" alt=""
+      /></span>
+    </div>
+    <div class="switcher">
+      <ul>
+        <li class="switchers" id="li">
+          <ng-container *ngFor="let img of images; index as i">
+            <div
+              class="dot"
+              [class.active]="i === index"
+              (click)="switch(i)"
+            ></div>
+          </ng-container>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

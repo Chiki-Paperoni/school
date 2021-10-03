@@ -8,7 +8,7 @@ import { MainModule } from './main/main.module';
 
 @NgModule({
   declarations: [AppComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule, MainModule],
+  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), AppRoutingModule, MainModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -32,6 +32,9 @@ body {
 .pd-small {
   padding: max(9.5px, 1.2rem) max(15px, 2.5rem);
 }
+.pd-small-hollow {
+  padding: max(7px, 1.03rem) max(12.5px, 2.33rem);
+}
 .btn-hollow {
   font-weight: bold;
   font-size: clamp(12px, 1.25rem, 18px);

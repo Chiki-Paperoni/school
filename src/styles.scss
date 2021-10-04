@@ -17,7 +17,6 @@ body {
   overflow-x: auto;
 }
 .btn-blue {
-  color: #fff;
   font-weight: bold;
   font-size: clamp(12px, 1.25rem, 18px);
   line-height: 135%;
@@ -25,6 +24,7 @@ body {
   border-radius: 36px;
   text-align: center;
   min-width: 145px;
+  color: white !important;
 }
 .pd-large {
   padding: max(12px, 1.2rem) max(22px, 4rem);

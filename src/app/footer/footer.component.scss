@@ -46,19 +46,20 @@ footer {
       display: flex;
       flex-direction: column;
       .text {
-        font-size: 14px;
+        font-size: clamp(14px, 1.25rem, 18px);
         line-height: 115%;
       }
       .email {
         font-weight: bold;
-        font-size: 30px;
+        font-size: clamp(30px, 2.43rem, 34px);
         line-height: 115%;
         color: #ffe86e;
       }
       .info {
         display: flex;
         font-weight: bold;
-        font-size: 12px;
+        font-size: clamp(12px, 1.1rem, 16px);
+
         line-height: 115%;
 
         .col:first-of-type {

@@ -29,9 +29,10 @@ header {
       padding: 46px 0 0 0;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       .links {
         display: flex;
-        margin-left: 100px;
+        margin-right: 40px;
         .link {
           &:first-of-type {
             margin-right: 34px;
@@ -42,7 +43,6 @@ header {
         }
       }
       .phone {
-        margin-left: auto;
         font-weight: bold;
         font-size: 20px;
         line-height: 125%;

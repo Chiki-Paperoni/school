@@ -85,3 +85,14 @@ footer {
     }
   }
 }
+@media screen and (max-width: 826px) {
+  footer {
+    .container {
+      .col {
+        .designedAt {
+          max-width: none;
+        }
+      }
+    }
+  }
+}

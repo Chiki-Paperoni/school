@@ -2,7 +2,7 @@ header {
   height: 100vh;
   min-height: 800px;
   margin-bottom: 90px;
-  .container {
+  .headContainer {
     position: relative;
     height: 100%;
     .banner {
@@ -48,11 +48,63 @@ header {
         line-height: 125%;
         color: #fbfbfb;
       }
+      .menu {
+        display: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .mobileMenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 999;
+    transition: 0.3s;
+    height: 0%;
+    // height: 100%;
+    overflow: hidden;
+    .container {
+      height: 100%;
+      .content {
+        height: 100%;
+        padding-top: 46px;
+        display: flex;
+        flex-direction: column;
+        .close {
+          width: 28px;
+          align-self: end;
+          margin-bottom: 49px;
+        }
+        .mobileLink {
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 110%;
+          margin-bottom: 16px;
+          color: #2b2b2b;
+        }
+        .contacts {
+          margin-top: auto;
+          margin-bottom: 240px;
+          p {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 115%;
+            margin-bottom: 16px;
+            color: #3e44e6;
+          }
+        }
+      }
     }
   }
 }
 @media screen and(max-width:824px) {
   header {
+    .mobileMenu {
+      display: block;
+    }
     .container {
       .banner {
         display: none;
@@ -64,6 +116,9 @@ header {
         .links,
         .phone {
           display: none;
+        }
+        .menu {
+          display: block;
         }
       }
     }

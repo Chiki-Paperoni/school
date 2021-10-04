@@ -1,7 +1,9 @@
 <header>
-  <div class="container">
+  <div class="container headContainer">
     <nav>
-      <img class="logo" src="/assets/img/logo.png" alt="" />
+      <a routerLink="/"
+        ><img class="logo" src="/assets/img/logo.png" alt=""
+      /></a>
       <ul class="links">
         <li class="link">
           <a routerLink="/elementary">Початкова школа</a>
@@ -11,7 +13,9 @@
         </li>
       </ul>
       <span class="phone">(066) 737 04 31</span>
-      <!-- <span class="menu"> </span> -->
+      <span class="menu" (click)="showMenu()"
+        ><img src="/assets/img/menu.png" alt=""
+      /></span>
     </nav>
     <div class="main" id="main">
       <ng-content select="[mainTitle]"></ng-content>
@@ -20,5 +24,24 @@
     </div>
     <img class="banner" [src]="img1" alt="" />
     <img class="banner2" [src]="img2" alt="" />
+  </div>
+  <div class="mobileMenu" #mobileMenu>
+    <div class="container">
+      <div class="content">
+        <img
+          (click)="closeMenu()"
+          class="close"
+          src="/assets/img/close.png"
+          alt=""
+        />
+        <a class="mobileLink" routerLink="/">Головна</a>
+        <a class="mobileLink" routerLink="/elementary">Початкова школа</a>
+        <a class="mobileLink" routerLink="/preschool">Дошкільний підрозділ</a>
+        <div class="contacts">
+          <p>podilllia@ukr.net</p>
+          <p>(066) 737 04 31</p>
+        </div>
+      </div>
+    </div>
   </div>
 </header>

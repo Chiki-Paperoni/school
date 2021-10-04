@@ -25,6 +25,11 @@ body {
   text-align: center;
   min-width: 145px;
   color: white !important;
+  transition: 0.3s;
+  &:hover {
+    color: #1f1f1f !important;
+    background-color: #ffe86e;
+  }
 }
 .pd-large {
   padding: max(12px, 1.2rem) max(22px, 4rem);
@@ -45,6 +50,11 @@ body {
   background-color: white;
   text-align: center;
   min-width: 145px;
+  transition: 0.3s;
+  &:hover {
+    color: white !important;
+    background-color: #3e44e5;
+  }
 }
 .container {
   max-width: 1440px;
@@ -104,14 +114,18 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 80px;
+    row-gap: max(46px, 5.6rem);
     column-gap: 20px;
     color: #1f1f1f;
 
     .quote {
       max-width: 310px;
+      img {
+        width: max(22px, 2.6rem);
+      }
       h3 {
-        margin: 30px 0;
+        margin-top: max(20px, 2.1rem);
+        margin-bottom: max(10px, 2.1rem);
         font-weight: bold;
         font-size: clamp(20px, 2.4rem, 34px);
         line-height: 105%;

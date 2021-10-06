@@ -3,7 +3,7 @@
     margin-bottom: max(60px, 7rem);
     margin-top: max(20px, 4.5rem);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 40px;
     row-gap: 40px;
     align-items: center;
@@ -63,7 +63,7 @@ footer {
         line-height: 115%;
 
         .col:first-of-type {
-          margin-right: 40px;
+          margin-right: 56px;
           min-width: 132px;
         }
         span:first-of-type {
@@ -93,6 +93,13 @@ footer {
           max-width: none;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 626px) {
+  #location {
+    .location {
+      justify-content: center;
     }
   }
 }

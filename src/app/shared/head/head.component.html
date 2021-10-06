@@ -34,9 +34,13 @@
           src="/assets/img/close.png"
           alt=""
         />
-        <a class="mobileLink" routerLink="/">Головна</a>
-        <a class="mobileLink" routerLink="/elementary">Початкова школа</a>
-        <a class="mobileLink" routerLink="/preschool">Дошкільний підрозділ</a>
+        <a class="mobileLink" routerLink="/" (click)="closeMenu()">Головна</a>
+        <a class="mobileLink" routerLink="/elementary" (click)="closeMenu()"
+          >Початкова школа</a
+        >
+        <a class="mobileLink" routerLink="/preschool" (click)="closeMenu()"
+          >Дошкільний підрозділ</a
+        >
         <div class="contacts">
           <p>podilllia@ukr.net</p>
           <p>(066) 737 04 31</p>

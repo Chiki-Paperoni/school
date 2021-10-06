@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     .poster {
       width: max(256px, 35.8rem);
+      transform: translateY(-21%);
     }
     .areas {
       display: flex;
@@ -23,6 +24,7 @@
       .images {
         height: max-content;
         margin-top: auto;
+        min-width: 270px;
         img {
           height: max(4.6rem, 43px);
         }
@@ -57,6 +59,9 @@
     .reversed {
       .areas {
         order: 2;
+      }
+      .poster {
+        transform: translateY(0);
       }
     }
   }

@@ -2,6 +2,10 @@
   margin-top: clamp(14px, 1.25rem, 18px);
   margin-bottom: 45px;
   line-height: 135%;
+  max-width: 491px;
+}
+.mb0 {
+  margin-bottom: 0;
 }
 .btn-blue {
   color: white;

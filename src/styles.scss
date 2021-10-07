@@ -16,6 +16,7 @@ html {
 body {
   overflow-x: auto;
 }
+
 .btn-blue {
   font-weight: bold;
   font-size: max(12px, 1.25rem);
@@ -36,10 +37,10 @@ body {
   padding: max(12px, 1.2rem) max(22px, 4rem);
 }
 .pd-small {
-  padding: max(9.5px, 1.2rem) max(15px, 2.5rem);
+  padding: max(12px, 1.2rem) max(15px, 2.5rem);
 }
 .pd-small-hollow {
-  padding: max(7px, 1.03rem) max(12.5px, 2.33rem);
+  padding: max(9.5px, 1.03rem) max(12.5px, 2.33rem);
 }
 .btn-hollow {
   font-weight: bold;
@@ -183,6 +184,9 @@ section {
       }
     }
   }
+}
+.black {
+  color: #1f1f1f !important;
 }
 
 @media screen and (min-width: 1440px) {

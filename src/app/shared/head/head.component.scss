@@ -1,7 +1,8 @@
 header {
   height: 100vh;
-  min-height: 800px;
+  min-height: 874px;
   margin-bottom: 90px;
+  max-height: 1200px;
   .headContainer {
     position: relative;
     height: 100%;
@@ -55,6 +56,9 @@ header {
       .menu {
         display: none;
         cursor: pointer;
+        img {
+          height: 22px;
+        }
       }
     }
   }
@@ -78,7 +82,7 @@ header {
         display: flex;
         flex-direction: column;
         .close {
-          width: 28px;
+          width: 21px;
           align-self: end;
           margin-bottom: 49px;
         }

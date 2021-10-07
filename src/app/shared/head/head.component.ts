@@ -16,6 +16,7 @@ export class HeadComponent implements OnInit {
   @ViewChild('mobileMenu', { static: false }) menu!: ElementRef;
   @Input() img1 = '';
   @Input() img2 = '';
+  @Input() isBlack = false;
 
   constructor(private renderer: Renderer2) {}
 

@@ -12,6 +12,8 @@ export class PreschoolComponent implements OnInit {
     'preschool/gallery/3.png',
     'preschool/gallery/4.png',
     'preschool/gallery/5.png',
+    'preschool/gallery/6.jpg',
+    'preschool/gallery/7.jpg',
   ];
   constructor() {}
 
